@@ -19,7 +19,7 @@ app.use(methodOverride("_method"));
 app.engine("handlebars", handlebars({ defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
-require("./controllers/burgerControllers")(app);
+require("./controllers/burger_controller")(app);
 
 
 app.listen(port);
